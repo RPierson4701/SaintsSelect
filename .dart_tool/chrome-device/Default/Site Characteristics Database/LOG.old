@@ -1,2 +1,5 @@
-2025/11/13-14:14:24.322 9948 Creating DB C:\Users\katie\AppData\Local\Temp\flutter_tools.137d221b\flutter_tools_chrome_device.ad13641f\Default\Site Characteristics Database since it was missing.
-2025/11/13-14:14:24.331 9948 Reusing MANIFEST C:\Users\katie\AppData\Local\Temp\flutter_tools.137d221b\flutter_tools_chrome_device.ad13641f\Default\Site Characteristics Database/MANIFEST-000001
+2025/11/17-19:31:39.682 3614 Log #3: 3 ops saved to Table #4 OK
+2025/11/17-19:31:39.693 3614 Archiving C:\Users\katie\AppData\Local\Temp\flutter_tools.73a07d1\flutter_tools_chrome_device.8cc98324\Default\Site Characteristics Database/000003.log: OK
+2025/11/17-19:31:39.695 3614 Table #4: 3 entries OK
+2025/11/17-19:31:39.701 3614 Archiving C:\Users\katie\AppData\Local\Temp\flutter_tools.73a07d1\flutter_tools_chrome_device.8cc98324\Default\Site Characteristics Database/MANIFEST-000001: OK
+2025/11/17-19:31:39.723 3614 **** Repaired leveldb C:\Users\katie\AppData\Local\Temp\flutter_tools.73a07d1\flutter_tools_chrome_device.8cc98324\Default\Site Characteristics Database; recovered 1 files; 223 bytes. Some data may have been lost. ****
