@@ -39,6 +39,7 @@
         "shared_preferences_platform_interface",
         "shared_preferences_web",
         "shared_preferences_windows",
+        "smooth_page_indicator",
         "sqflite",
         "sqflite_common",
         "timeago",
@@ -786,6 +787,13 @@
       "name": "vm_service",
       "version": "15.0.2",
       "dependencies": []
+    },
+    {
+      "name": "smooth_page_indicator",
+      "version": "1.2.1",
+      "dependencies": [
+        "flutter"
+      ]
     }
   ],
   "configVersion": 1

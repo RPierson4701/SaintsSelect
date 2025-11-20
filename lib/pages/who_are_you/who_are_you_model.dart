@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'home_page_widget.dart' show HomePageWidget;
+import 'who_are_you_widget.dart' show WhoAreYouWidget;
 import 'package:flutter/material.dart';
 
-class HomePageModel extends FlutterFlowModel<HomePageWidget> {
+class WhoAreYouModel extends FlutterFlowModel<WhoAreYouWidget> {
   @override
   void initState(BuildContext context) {}
 

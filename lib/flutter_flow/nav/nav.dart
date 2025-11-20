@@ -1,4 +1,9 @@
 import 'dart:async';
+import '/pages/start_point/start_point_widget.dart';
+import '/pages/interests/interests_widget.dart';
+import '/pages/who_are_you/who_are_you_widget.dart';
+import '/pages/chat_page/chat_page_widget.dart';
+import '/pages/profile_page/profile_page_widget.dart';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -29,22 +34,49 @@ class AppStateNotifier extends ChangeNotifier {
 }
 
 GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
-      initialLocation: SavedMatchesWidget.routePath,
+      initialLocation: StartPointWidget.routePath,
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
-      errorBuilder: (context, state) => SavedMatchesWidget(),
+      errorBuilder: (context, state) => StartPointWidget(),
       routes: [
+        FFRoute(
+          name: StartPointWidget.routeName,
+          path: StartPointWidget.routePath,
+          builder: (context, params) => StartPointWidget(),
+        ),
+        FFRoute(
+          name: InterestsWidget.routeName,
+          path: InterestsWidget.routePath,
+          builder: (context, params) => InterestsWidget(),
+        ),
+        FFRoute(
+          name: WhoAreYouWidget.routeName,
+          path: WhoAreYouWidget.routePath,
+          builder: (context, params) => WhoAreYouWidget(),
+        ),
+        FFRoute(
+          name: ChatPageWidget.routeName,
+          path: ChatPageWidget.routePath,
+          builder: (context, params) => ChatPageWidget(),
+        ),
+        FFRoute(
+          name: ProfilePageWidget.routeName,
+          path: ProfilePageWidget.routePath,
+          builder: (context, params) => ProfilePageWidget(),
+        ),
+
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => SavedMatchesWidget(),
+          builder: (context, _) => StartPointWidget(),
         ),
+
         FFRoute(
           name: SavedMatchesWidget.routeName,
           path: SavedMatchesWidget.routePath,
           builder: (context, params) => SavedMatchesWidget(),
-        )
+        ),
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
 
