@@ -4,7 +4,7 @@ import '/pages/interests/interests_widget.dart';
 import '/pages/who_are_you/who_are_you_widget.dart';
 import '/pages/chat_page/chat_page_widget.dart';
 import '/pages/profile_page/profile_page_widget.dart';
-
+import '/pages/news_page/news_page_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -60,6 +60,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           path: ChatPageWidget.routePath,
           builder: (context, params) => ChatPageWidget(),
         ),
+	FFRoute(
+  	  name: NewsPageWidget.routeName,
+  	  path: NewsPageWidget.routePath,
+  	  builder: (context, params) => NewsPageWidget(),
+	),
+
         FFRoute(
           name: ProfilePageWidget.routeName,
           path: ProfilePageWidget.routePath,
