@@ -2,7 +2,26 @@
 
 This application uses Flutterflow as a basis to create a roommate matching platform for Siena University.
 
-## Included Pages
+## pubspec.yaml
+This is a configuration file. It contains dependencies, assets, fonts,
+and additionally relevant data for our project.
+
+## assets
+This file contains any uploaded files that are used within the 
+application.
+
+## build
+This file is generated every time the application is built. It is 
+safe to delete this file.
+
+## web/ macos/ windows/ linux/ ios/ and android/
+This includes native code based on the platforms created
+from Flutterflow.
+
+## .dart_tool/
+Flutter editing tools that are never adjusted by developers. 
+
+## lib/pages
 
 ### Start Point
 This page is the initial page you will see when running our application.
