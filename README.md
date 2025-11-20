@@ -37,3 +37,5 @@ considering or talking with through the application.
 FlutterFlow projects are built to run on the Flutter _stable_ release.
 
 To run this program, run "flutter run" in your terminal window of choice.
+To navigate between pages, add the name of the page you would like to
+view to the URL using camel casing as we are still working on navigation.
